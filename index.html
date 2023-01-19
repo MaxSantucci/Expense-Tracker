@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXPENSE TRACKER</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="title">EXPENSE TRACKER</h2>
+    <h4 class="input-head">Add a new item:</h4>
+    <forn id="form">
+      <div class="inputs">
+        <div class="input__item">
+          <label for="type">Type:</label>
+          <input id='input-type' class="input-type" placeholder="Debit card"></input>
+        </div>
+        <div class="input__item">
+          <label for="name">Name:</label>
+          <input id='input-name' class="input-name" placeholder="Best buy"></input>
+        </div>
+        <div class="input__item">
+          <label for="date">Date:</label>
+          <input id='input-data' class="input-date" type="date" placeholder="Debit card"></input>
+        </div>
+        <div class="input__item">
+          <label for="amount">Amount:</label>
+          <input id='input-amount' class="input-item" type="number" placeholder="Enter amount"></input>
+        </div>
+      </div>
+    </forn>
+    <div class="button">
+      <button id="button" class="button-add clear-button" data-clear-selector="input">Add expens</button>
+    </div>
+    <table id="table">
+      <thead>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Data</th>
+        <th>Amount</th>
+        <th></th>
+      </thead>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
